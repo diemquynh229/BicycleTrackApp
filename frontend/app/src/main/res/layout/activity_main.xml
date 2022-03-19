@@ -41,7 +41,6 @@
         android:layout_width="345dp"
         android:layout_height="55dp"
         android:layout_marginStart="33dp"
-
         android:layout_marginTop="21dp"
         android:layout_marginEnd="33dp"
         android:layout_marginBottom="30dp"
@@ -114,11 +113,10 @@
 
     <RelativeLayout
         android:id="@+id/relativeLayout2"
-        android:layout_width="359dp"
-        android:layout_height="150dp"
+        android:layout_width="349dp"
+        android:layout_height="157dp"
         android:layout_marginStart="27dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="25dp"
+        android:layout_marginEnd="27dp"
         android:layout_marginBottom="17dp"
         android:background="@drawable/box"
         android:backgroundTint="#A6000000"
@@ -135,8 +133,8 @@
         android:layout_width="354dp"
         android:layout_height="147dp"
         android:layout_marginStart="27dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="30dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="27dp"
         android:layout_marginBottom="1dp"
         android:background="@drawable/box"
         android:backgroundTint="#A6FFFFFF"
@@ -149,29 +147,30 @@
     <RelativeLayout
         android:id="@+id/relativeLayout4"
         android:layout_width="145dp"
-        android:layout_height="72dp"
-        android:layout_marginStart="38dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="26dp"
-        android:layout_marginBottom="89dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="104dp"
         android:background="@drawable/box"
         android:backgroundTint="#D55959"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toEndOf="@+id/swipebutton"
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout3">
 
         <ImageView
-            android:layout_width="40dp"
-            android:layout_height="36dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_marginStart="60dp"
             android:src="@drawable/ic_baseline_location_on_24"></ImageView>
 
         <TextView
             android:layout_width="90dp"
             android:layout_height="36dp"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="30dp"
             android:text="Bike location"
             android:textColor="@color/white">
 
@@ -180,27 +179,43 @@
 
     <com.ebanx.swipebtn.SwipeButton
         android:id="@+id/swipebutton"
-        android:layout_width="139dp"
-        android:layout_height="102dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginEnd="39dp"
-        android:layout_marginBottom="100dp"
+        android:layout_width="145dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginBottom="104dp"
         app:button_bottom_padding="15dp"
         app:button_image_disabled="@drawable/ic_baseline_lock_open_24"
         app:button_image_enabled="@drawable/ic_baseline_lock_24"
-        app:button_left_padding="15dp"
-        app:button_right_padding="15dp"
+        app:button_left_padding="5dp"
+        app:button_right_padding="5dp"
         app:button_top_padding="15dp"
-        app:inner_text="Slice to unlock"
+        app:inner_text="Slice to lock"
         app:inner_text_bottom_padding="15dp"
         app:inner_text_left_padding="15dp"
-        app:inner_text_right_padding="15dp"
+        app:inner_text_right_padding="2dp"
+        app:inner_text_size="15dp"
         app:inner_text_top_padding="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/relativeLayout4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayout3"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout3" />
+
+    <RelativeLayout
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/box"
+        android:backgroundTint="#A6000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/swipebutton">
+
+
+    </RelativeLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
